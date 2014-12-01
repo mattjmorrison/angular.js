@@ -1,276 +1,154 @@
-#Contributing to AngularJS
+# Questions
 
-We'd love for you to contribute to our source code and to make AngularJS even better than it is
-today! Here are the guidelines we'd like you to follow:
+This is the issue tracker for Ember.js. The Ember.js community uses this site
+to collect and track bugs and discussions of new features. If you are having
+difficulties using Ember.js or have a question about usage please ask a
+question on Stack Overflow: http://stackoverflow.com/questions/ask?tags=ember.js
 
- - [Code of Conduct](#coc)
- - [Question or Problem?](#question)
- - [Issues and Bugs](#issue)
- - [Feature Requests](#feature)
- - [Submission Guidelines](#submit)
- - [Coding Rules](#rules)
- - [Commit Message Guidelines](#commit)
- - [Signing the CLA](#cla)
- - [Further Info](#info)
+The Ember.js community is very active on Stack Overflow and most questions
+receive attention the same day they're posted:
+http://stackoverflow.com/questions/tagged/ember.js
 
-## <a name="coc"></a> Code of Conduct
-Help us keep Angular open and inclusive. Please read and follow our [Code of Conduct][coc].
+# Issues
 
-## <a name="question"></a> Got a Question or Problem?
+Think you've found a bug or have a new feature to suggest? Let us know!
 
-If you have questions about how to use AngularJS, please direct these to the [Google Group][groups]
-discussion list or [StackOverflow][stackoverflow]. We are also available on [IRC][irc].
+## Reporting a Bug
+1. Update to the most recent master release if possible. We may have already
+fixed your bug.
 
-## <a name="issue"></a> Found an Issue?
-If you find a bug in the source code or a mistake in the documentation, you can help us by
-submitting an issue to our [GitHub Repository][github]. Even better you can submit a Pull Request
-with a fix.
+2. Search for similar issues. It's possible somebody has encountered
+this bug already.
 
-***Localization Issue:*** *Angular.js uses the [Google Closure I18N library], to generate its own I18N files. This means that
-any changes to these files would be lost the next time that we import the library. The recommended
-approach is to submit a patch to the I18N project directly, instead of submitting it here.*
+3. Provide JSFiddle or JSBin demo that specifically shows the problem. This
+demo should be fully operational with the exception of the bug you want to
+demonstrate. The more pared down, the better.
+Preconfigured starting points for the latest Ember: [JSFiddle](http://jsfiddle.net/NQKvy/) | [JSBin](http://emberjs.jsbin.com) (may not work with older IE versions due to MIME type issues).
+If it is not possible to produce a fiddle, please make sure you provide very
+specific steps to reproduce the error. If we cannot reproduce it, we will
+close the ticket.
 
-**Please see the Submission Guidelines below**.
+4. Your issue will be verified. The provided example will be tested for
+correctness. The Ember team will work with you until your issue can
+be verified.
 
-## <a name="feature"></a> Want a Feature?
-You can request a new feature by submitting an issue to our [GitHub Repository][github].  If you
-would like to implement a new feature then consider what kind of change it is:
+5. Keep up to date with feedback from the Ember team on your ticket. Your
+ticket may be closed if it becomes stale.
 
-* **Major Changes** that you wish to contribute to the project should be discussed first on our
-[dev mailing list][angular-dev] or [IRC][irc] so that we can better coordinate our efforts, prevent
-duplication of work, and help you to craft the change so that it is successfully accepted into the
-project.
-* **Small Changes** can be crafted and submitted to the [GitHub Repository][github] as a Pull Request.
+6. If possible, submit a Pull Request with a failing test. Better yet, take
+a stab at fixing the bug yourself if you can!
 
+The more information you provide, the easier it is for us to validate that
+there is a bug and the faster we'll be able to take action.
 
-## <a name="docs"></a> Want a Doc Fix?
-If you want to help improve the docs, it's a good idea to let others know what you're working on to
-minimize duplication of effort. Before starting, check out the issue queue for
-[Milestone:Docs Only](https://github.com/angular/angular.js/issues?milestone=24&state=open).
-Comment on an issue to let others know what you're working on, or create a new issue if your work
-doesn't fit within the scope of any of the existing doc fix projects.
+## Requesting a Feature
 
-For large fixes, please build and test the documentation before submitting the PR to be sure you haven't
-accidentally introduced any layout or formatting issues. You should also make sure that your commit message
-is labeled "docs:" and follows the **Git Commit Guidelines** outlined below.
+1. Search Issues for similar feature requests. It's possible somebody has
+already asked for this feature or provided a pull request that we're still
+discussing.
 
-If you're just making a small change, don't worry about filing an issue first. Use the friendly blue "Improve this doc" button at the top right of the doc page to fork the repository in-place and make a quick change on the fly. When naming the commit, it is advised to still label it according to the commit guidelines below, by starting the commit message with **docs** and referencing the filename. Since this is not obvious and some changes are made on the fly, this is not strictly necessary and we will understand if this isn't done the first few times. 
+2. Provide a clear and detailed explanation of the feature you want and why
+it's important to add. Keep in mind that we want features that will be useful
+to the majority of our users and not just a small subset. If you're just
+targeting a minority of users, consider writing an add-on library for Ember.
 
-## <a name="submit"></a> Submission Guidelines
+3. If the feature is complex, consider writing some initial documentation for
+it. If we do end up accepting the feature it will need to be documented and
+this will also help us to understand it better ourselves.
 
-### Submitting an Issue
-Before you submit your issue search the archive, maybe your question was already answered.
+4. Attempt a Pull Request. If you're at all able, start writing some code. We
+always have more work to do than time to do it. If you can write some code
+then that will speed the process along.
 
-If your issue appears to be a bug, and hasn't been reported, open a new issue.
-Help us to maximize the effort we can spend fixing issues and adding new
-features, by not reporting duplicate issues.  Providing the following information will increase the
-chances of your issue being dealt with quickly:
+# Building Ember.js
 
-* **Overview of the Issue** - if an error is being thrown a non-minified stack trace helps
-* **Motivation for or Use Case** - explain why this is a bug for you
-* **Angular Version(s)** - is it a regression?
-* **Browsers and Operating System** - is this a problem with all browsers or only IE8?
-* **Reproduce the Error** - provide a live example (using [Plunker][plunker] or
-  [JSFiddle][jsfiddle]) or a unambiguous set of steps.
-* **Related Issues** - has a similar issue been reported before?
-* **Suggest a Fix** - if you can't fix the bug yourself, perhaps you can point to what might be
-  causing the problem (line of code or commit)
+Building Ember is quite simple.
 
-Here is a great example of a well defined issue: https://github.com/angular/angular.js/issues/5069
-
-**If you get help, help others. Good karma rulez!**
-
-### Submitting a Pull Request
-Before you submit your pull request consider the following guidelines:
-
-* Search [GitHub](https://github.com/angular/angular.js/pulls) for an open or closed Pull Request
-  that relates to your submission. You don't want to duplicate effort.
-* Please sign our [Contributor License Agreement (CLA)](#cla) before sending pull
-  requests. We cannot accept code without this.
-* Make your changes in a new git branch
-
-     ```shell
-     git checkout -b my-fix-branch master
-     ```
-
-* Create your patch, **including appropriate test cases**.
-* Follow our [Coding Rules](#rules).
-* Run the full Angular test suite, as described in the [developer documentation][dev-doc],
-  and ensure that all tests pass.
-* Commit your changes using a descriptive commit message that follows our
-  [commit message conventions](#commit-message-format) and passes our commit message presubmit hook
-  `validate-commit-msg.js`. Adherence to the [commit message conventions](#commit-message-format)
-  is required because release notes are automatically generated from these messages.
-
-     ```shell
-     git commit -a
-     ```
-  Note: the optional commit `-a` command line option will automatically "add" and "rm" edited files.
-
-* Build your changes locally to ensure all the tests pass
-
-    ```shell
-    grunt test
-    ```
-
-* Push your branch to GitHub:
-
-    ```shell
-    git push origin my-fix-branch
-    ```
-
-* In GitHub, send a pull request to `angular:master`.
-* If we suggest changes then
-  * Make the required updates.
-  * Re-run the Angular test suite to ensure tests are still passing.
-  * Rebase your branch and force push to your GitHub repository (this will update your Pull Request):
-
-    ```shell
-    git rebase master -i
-    git push -f
-    ```
-
-That's it! Thank you for your contribution!
-
-#### After your pull request is merged
-
-After your pull request is merged, you can safely delete your branch and pull the changes
-from the main (upstream) repository:
-
-* Delete the remote branch on GitHub either through the GitHub web UI or your local shell as follows:
-
-    ```shell
-    git push origin --delete my-fix-branch
-    ```
-
-* Check out the master branch:
-
-    ```shell
-    git checkout master -f
-    ```
-
-* Delete the local branch:
-
-    ```shell
-    git branch -D my-fix-branch
-    ```
-
-* Update your master with the latest upstream version:
-
-    ```shell
-    git pull --ff upstream master
-    ```
-
-## <a name="rules"></a> Coding Rules
-To ensure consistency throughout the source code, keep these rules in mind as you are working:
-
-* All features or bug fixes **must be tested** by one or more [specs][unit-testing].
-* All public API methods **must be documented** with ngdoc, an extended version of jsdoc (we added
-  support for markdown and templating via @ngdoc tag). To see how we document our APIs, please check
-  out the existing ngdocs and see [this wiki page][ngDocs].
-* With the exceptions listed below, we follow the rules contained in
-  [Google's JavaScript Style Guide][js-style-guide]:
-    * **Do not use namespaces**: Instead,  wrap the entire angular code base in an anonymous closure and
-      export our API explicitly rather than implicitly.
-    * Wrap all code at **100 characters**.
-    * Instead of complex inheritance hierarchies, we **prefer simple objects**. We use prototypal
-      inheritance only when absolutely necessary.
-    * We **love functions and closures** and, whenever possible, prefer them over objects.
-    * To write concise code that can be better minified, we **use aliases internally** that map to the
-      external API. See our existing code to see what we mean.
-    * We **don't go crazy with type annotations** for private internal APIs unless it's an internal API
-      that is used throughout AngularJS. The best guidance is to do what makes the most sense.
-
-## <a name="commit"></a> Git Commit Guidelines
-
-We have very precise rules over how our git commit messages can be formatted.  This leads to **more
-readable messages** that are easy to follow when looking through the **project history**.  But also,
-we use the git commit messages to **generate the AngularJS change log**.
-
-### Commit Message Format
-Each commit message consists of a **header**, a **body** and a **footer**.  The header has a special
-format that includes a **type**, a **scope** and a **subject**:
-
-```
-<type>(<scope>): <subject>
-<BLANK LINE>
-<body>
-<BLANK LINE>
-<footer>
+```sh
+cd ember.js
+npm install
+npm run-script build
 ```
 
-Any line of the commit message cannot be longer 100 characters! This allows the message to be easier
-to read on github as well as in various git tools.
+# Pull Requests
 
-### Type
-Must be one of the following:
+We love pull requests. Here's a quick guide:
 
-* **feat**: A new feature
-* **fix**: A bug fix
-* **docs**: Documentation only changes
-* **style**: Changes that do not affect the meaning of the code (white-space, formatting, missing
-  semi-colons, etc)
-* **refactor**: A code change that neither fixes a bug or adds a feature
-* **perf**: A code change that improves performance
-* **test**: Adding missing tests
-* **chore**: Changes to the build process or auxiliary tools and libraries such as documentation
-  generation
+1. Fork the repo.
 
-### Scope
-The scope could be anything specifying place of the commit change. For example `$location`,
-`$browser`, `$compile`, `$rootScope`, `ngHref`, `ngClick`, `ngView`, etc...
+2. Run the tests. We only take pull requests with passing tests, and it's great
+to know that you have a clean slate: `npm install && npm test`.
+(To see tests in the browser, run `npm start` and open `http://localhost:4200/tests/index.html`.)
 
-### Subject
-The subject contains succinct description of the change:
+3. Add a test for your change. Only refactoring and documentation changes
+require no new tests. If you are adding functionality or fixing a bug, we need
+a test! If your change is a new feature, please
+[wrap it in a feature flag](http://emberjs.com/guides/contributing/adding-new-features/).
 
-* use the imperative, present tense: "change" not "changed" nor "changes"
-* don't capitalize first letter
-* no dot (.) at the end
+4. Make the test pass.
 
-###Body
-Just as in the **subject**, use the imperative, present tense: "change" not "changed" nor "changes"
-The body should include the motivation for the change and contrast this with previous behavior.
+5. Commit your changes. Please use an appropriate commit prefix.
+If your pull request fixes an issue specify it in the commit message. Some examples:
 
-###Footer
-The footer should contain any information about **Breaking Changes** and is also the place to
-reference GitHub issues that this commit **Closes**.
+  ```
+  [DOC beta] Update CONTRIBUTING.md for commit prefixes
+  [FEATURE query-params-new] Message
+  [BUGFIX beta] Message
+  [SECURITY CVE-111-1111] Message
+  ```
+
+  For more information about commit prefixes see
+  [Robert Jacksons slides on contributing to Ember](https://speakerdeck.com/rwjblue/contributing-to-ember).
 
 
-A detailed explanation can be found in this [document][commit-message-format].
+6. Push to your fork and submit a pull request. Please provide us with some
+explanation of why you made the changes you made. For new features make sure to
+explain a standard use case to us.
 
-## <a name="cla"></a> Signing the CLA
+We try to be quick about responding to tickets but sometimes we get a bit
+backlogged. If the response is slow, try to find someone on IRC (#emberjs) to
+give the ticket a review.
 
-Please sign our Contributor License Agreement (CLA) before sending pull requests. For any code
-changes to be accepted, the CLA must be signed. It's a quick process, we promise!
+Some things that will increase the chance that your pull request is accepted,
+taken straight from the Ruby on Rails guide:
 
-* For individuals we have a [simple click-through form][individual-cla].
-* For corporations we'll need you to
-  [print, sign and one of scan+email, fax or mail the form][corporate-cla].
+* Use Ember idioms and helpers
+* Include tests that fail without your code, and pass with it
+* Update the documentation, the surrounding one, examples elsewhere, guides,
+  whatever is affected by your contribution
 
-## <a name="info"></a> Further Information
-You can find out more detailed information about contributing in the
-[AngularJS documentation][contributing].
+Syntax:
 
+* Two spaces, no tabs.
+* No trailing whitespace. Blank lines should not have any space.
+* a = b and not a=b.
+* Follow the conventions you see used in the source already.
 
+Inline Documentation Guidelines:
 
-[Google Closure I18N library]: https://github.com/google/closure-library/tree/master/closure/goog/i18n
-[angular-dev]: https://groups.google.com/forum/?fromgroups#!forum/angular-dev
-[coc]: https://github.com/angular/code-of-conduct/blob/master/CODE_OF_CONDUCT.md
-[commit-message-format]: https://docs.google.com/document/d/1QrDFcIiPjSLDn3EL15IJygNPiHORgU1_OOAqWjiDU5Y/edit#
-[contribute]: http://docs.angularjs.org/misc/contribute
-[contributing]: http://docs.angularjs.org/misc/contribute
-[corporate-cla]: http://code.google.com/legal/corporate-cla-v1.0.html
-[dev-doc]: https://docs.angularjs.org/guide
-[github]: https://github.com/angular/angular.js
-[groups]: https://groups.google.com/forum/?fromgroups#!forum/angular
-[individual-cla]: http://code.google.com/legal/individual-cla-v1.0.html
-[irc]: http://webchat.freenode.net/?channels=angularjs&uio=d4
-[js-style-guide]: http://google-styleguide.googlecode.com/svn/trunk/javascriptguide.xml
-[jsfiddle]: http://jsfiddle.net/
-[list]: https://groups.google.com/forum/?fromgroups#!forum/angular
-[ngDocs]: https://github.com/angular/angular.js/wiki/Writing-AngularJS-Documentation
-[plunker]: http://plnkr.co/edit
-[stackoverflow]: http://stackoverflow.com/questions/tagged/angularjs
-[unit-testing]: https://docs.angularjs.org/guide/unit-testing
+All inline documentation is written using YUIDoc. Follow these rules when
+updating or writing new documentation:
 
-[![Analytics](https://ga-beacon.appspot.com/UA-8594346-11/angular.js/CONTRIBUTING.md?pixel)](https://github.com/igrigorik/ga-beacon)
+1. All code blocks must be fenced
+2. All code blocks must have a language declared
+3. All code blocks must be valid code for syntax highlighting
+4. All examples in code blocks must be aligned
+5. Use two spaces between the code and the example: `foo();  // result`
+6. All references to code words must be enclosed in backticks
+7. Prefer a single space between sentences
+8. Reference Ember.js as Ember.
+9. Wrap long markdown blocks > 80 characters
+10. Don't include blank lines after `@param` definitions
+
+Code words are:
+
+* `thisPropertyName`
+* `Global.Class.attribute`
+* `thisFunction()`
+* `Global.CONSTANT_NAME`
+* `true`, `false`, `null`, `undefined` (when referring to programming values)
+* references to other properties/methods
+
+And in case we didn't emphasize it enough: we love tests!
+
+NOTE: Partially copied from https://raw.github.com/thoughtbot/factory_girl_rails/master/CONTRIBUTING.md

@@ -1,6 +1,7 @@
-Instructions for using benchpress (how to create benchmarks, how to run, how to configure) can be
-found at: https://github.com/angular/benchpress/blob/master/README.md.
+# Extremely simple Ember benchmarks
 
-In this project, there is a configured grunt task for building the benchmarks,
-`grunt bp_build`, which places the runnable benchmarks in "/build/benchmarks/".
-The existing `grunt webserver` task can be used to serve the built benchmarks at `localhost:8000/build/benchmarks/<benchmark-name>`
+To run the benchmarks, serve the repository root on a web server (`gem install
+asdf; asdf`), run `rake` to build Ember, and open e.g.
+`http://localhost:9292/benchmarks/index.html?suitePath=plain_object.js` to run
+`benchmarks/suites/plain_object.js`. Run `cp -r dist distold` to benchmark
+different versions against each other.
