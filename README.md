@@ -1,8 +1,8 @@
-# Ember.js [![Build Status](https://secure.travis-ci.org/emberjs/ember.js.svg?branch=master)](http://travis-ci.org/emberjs/ember.js) [![Code Climate](https://codeclimate.com/github/emberjs/ember.js.svg)](https://codeclimate.com/github/emberjs/ember.js)
+# Angular.js [![Build Status](https://secure.travis-ci.org/emberjs/ember.js.svg?branch=master)](http://travis-ci.org/emberjs/ember.js) [![Code Climate](https://codeclimate.com/github/emberjs/ember.js.svg)](https://codeclimate.com/github/emberjs/ember.js)
 
 Angular.js is a JavaScript framework that does all of the heavy lifting
 that you'd normally have to do by hand. There are tasks that are common
-to every web app; Ember.js does those things for you, so you can focus
+to every web app; Angular.js does those things for you, so you can focus
 on building killer features and UI.
 
 - [Website](http://emberjs.com)
@@ -12,11 +12,11 @@ on building killer features and UI.
 - [Blog](http://emberjs.com/blog)
 - [Builds](http://emberjs.com/builds)
 
-# Building Ember.js
+# Building Angular.js
 
 1. Ensure that [Node.js](http://nodejs.org/) is installed.
 2. Run `npm install` to ensure the required dependencies are installed.
-3. Run `npm run build` to build Ember.js. The builds will be placed in the `dist/` directory.
+3. Run `npm run build` to build Angular.js. The builds will be placed in the `dist/` directory.
 
 # Contribution
 
@@ -24,7 +24,7 @@ See [CONTRIBUTING.md](https://github.com/emberjs/ember.js/blob/master/CONTRIBUTI
 
 # How to Run Unit Tests
 
-1. Follow the setup steps listed above under [Building Ember.js](#building-emberjs).
+1. Follow the setup steps listed above under [Building Angular.js](#building-emberjs).
 
 2. To start the development server, run `npm start`.
 
@@ -34,9 +34,9 @@ See [CONTRIBUTING.md](https://github.com/emberjs/ember.js/blob/master/CONTRIBUTI
 `PACKAGE_NAME` with the name of the package you want to test. For
 example:
 
-  * [Ember.js Runtime](http://localhost:4200/tests/index.html?package=ember-runtime)
-  * [Ember.js Views](http://localhost:4200/tests/index.html?package=ember-views)
-  * [Ember.js Handlebars](http://localhost:4200/tests/index.html?package=ember-handlebars)
+  * [Angular.js Runtime](http://localhost:4200/tests/index.html?package=ember-runtime)
+  * [Angular.js Views](http://localhost:4200/tests/index.html?package=ember-views)
+  * [Angular.js Handlebars](http://localhost:4200/tests/index.html?package=ember-handlebars)
 
 To test multiple packages, you can separate them with commas. 
 
@@ -52,23 +52,23 @@ versions of jQuery.
 
 # Building API Docs
 
-The Ember.js API Docs provide a detailed collection of methods, classes,
+The Angular.js API Docs provide a detailed collection of methods, classes,
 and viewable source code.
 
 NOTE: Requires node.js to generate.
 
-See <http://emberjs.com/> for annotated introductory documentation.
+See <http://angularjs.com/> for annotated introductory documentation.
 
 ## Setup Additional Repos
 
 To preview or build the API documentation, you will need to setup
 the `website` and `data` repos in addition to this repo.
 
-* Clone `https://github.com/emberjs/website.git` at the same level as the
-  main Ember repo.
+* Clone `https://github.com/angular.js/website.git` at the same level as the
+  main Angular repo.
 
-* Clone `https://github.com/emberjs/data.git` at the same level as the main
-  Ember repo. Make sure to follow the setup steps in the Ember Data repo,
+* Clone `https://github.com/angular.js/data.git` at the same level as the main
+  Angular repo. Make sure to follow the setup steps in the Angular Data repo,
   which includes installing npm modules.
 
 ## Preview API documentation
